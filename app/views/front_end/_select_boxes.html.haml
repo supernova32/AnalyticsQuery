@@ -1,4 +1,4 @@
 .filter_container
-  = select_tag 'filter', options_for_select(%w(ci ctr earnings)), class: 'filter'
+  = select_tag 'filter', options_for_select(%w(ci ctr earnings co cpc epc cpc_last costs)), class: 'filter'
   = select_tag 'operator', options_for_select(@operators.collect { |op| [op[:name], op[:value]] }), class: 'operator'
   = text_field_tag 'value', nil, placeholder: 'Value'
