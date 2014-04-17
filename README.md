@@ -1,6 +1,4 @@
-#README
-
-## Simple Analytics Filter
+# Simple Analytics Filter
 
 This is a small Rails application that serves as
 both front-end and back-end to a filtering system
