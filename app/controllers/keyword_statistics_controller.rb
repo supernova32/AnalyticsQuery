@@ -56,10 +56,10 @@ class KeywordStatisticsController < ApplicationController
                                                               'epc'=> { '$avg'=> '$epc'},
                                                               'cpc_last'=> { '$last'=> '$cpc'},
                                                           }},
+                                                          {'$limit' => Integer(params[:limit])},
                                                           {'$match'=> sanitize_params(params) },
                                                           { '$sort' => { 'earnings' => -1, 'ctr'=> -1 } },
-                                                          { '$skip' => 0 },
-                                                          { '$limit' => 50 }
+                                                          { '$skip' => 0 }
                                                       ])
 
     respond_to do |format|

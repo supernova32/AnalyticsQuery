@@ -5,6 +5,8 @@
     %h5 Filters
     #selectors
       = render 'select_boxes'
+    .input-group
+      = text_field_tag 'limit', nil, class: 'form-horizontal', placeholder: 'Limit'
 
   .container
     %button.btn-sm.btn.btn-primary#add +
@@ -27,7 +29,3 @@
           %th Last CPC
 
       %tbody#results
-
-
-
-

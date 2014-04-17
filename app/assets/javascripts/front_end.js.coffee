@@ -18,6 +18,7 @@ jQuery ->
         op: $(this).children(".operator").val()
         value: $(this).children("#value").val()
       data[attr] = temp_data
+    data['limit'] = $('#limit').val()
 
     $.post "/filter_keywords", data, ((response) ->
       $("#results").empty()
