@@ -1,0 +1,33 @@
+.container
+  %h3 Apply the following queries
+
+  .container
+    %h5 Filters
+    #selectors
+      = render 'select_boxes'
+
+  .container
+    %button.btn-sm.btn.btn-primary#add +
+    %button.btn.btn-sm.btn-success#apply Go!
+
+
+  .container
+    %table.table.table-stripped
+      %thead
+        %tr
+          %th Keyword
+          %th Size
+          %th Costs
+          %th Earnings
+          %th CI
+          %th CO
+          %th CTR
+          %th CPC
+          %th EPC
+          %th Last CPC
+
+      %tbody#results
+
+
+
+

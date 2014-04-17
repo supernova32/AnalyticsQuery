@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+
+  root 'front_end#index'
+
+  get 'index' => 'keyword_statistics#index', format: :json
+
+  post '/filter_keywords' => 'keyword_statistics#filter_keywords'
+  get '/filter_keywords' => 'keyword_statistics#filter_keywords'
+  get '/select' =>'front_end#select_boxes'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
