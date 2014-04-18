@@ -20,4 +20,4 @@ After that, just point your browser to `http://localhost:3000`
 and you should see the empty filters. You can add
 as many filtering options as you like. Once you are
 ready, press `Go!` and the results should be loaded
-to the table bellow.
+to the table below.
